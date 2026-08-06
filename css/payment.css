@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    padding: 15px;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #f1f1f1;
+}
+
+/* Payment Section */
+.payment-section {
+    background-color: white;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.payment-section h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.payment-section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.payment-section form {
+    display: grid;
+    gap: 15px;
+}
+
+.payment-section label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.payment-section input[type="text"],
+.payment-section input[type="month"],
+.payment-section input[type="number"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.payment-section button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.payment-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .payment-section {
+        padding: 20px;
+    }
+
+    payment-section button {
+        font-size: 1rem;
+    }
+}

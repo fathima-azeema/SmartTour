@@ -1,0 +1,113 @@
+/* General Header Styling */
+.header {
+        font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.863); /* Semi-transparent background */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0; /* Adjust padding for better spacing */
+    z-index: 100;
+    display: flex;
+    justify-content: space-between; /* Distribute space between logo, nav, and buttons */
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for elevated look */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo Styling */
+.header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.header .logo .logo-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+}
+
+/* Centered Navigation Links */
+.nav-desktop {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1; /* Make sure nav links grow and take up remaining space */
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+        font-family: 'Roboto', sans-serif;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Hover effect to change color */
+}
+
+/* User Actions (Login and Sign Up) */
+.header-actions {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.header-actions .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Login Button (Secondary) */
+.header-actions .btn-secondary {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.header-actions .btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+/* Sign Up Button (Primary) */
+.header-actions .btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.header-actions .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.header-actions .btn-secondary:focus,
+.header-actions .btn-primary:focus {
+    outline: none; /* Remove focus outline */
+}
